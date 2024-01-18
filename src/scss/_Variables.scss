@@ -1,0 +1,36 @@
+$Colours: (
+    "Primary":pink, 
+    "Secondary":green,
+    "Success": rgb(68, 255, 68), 
+    "Danger": red,
+    "Warning": Yellow, 
+    "Info":Blue, 
+    "Ligth":white, 
+    "Dark":rgb(109, 25, 25),
+    "Link":red
+);
+
+
+
+@each $nombre, $color in $Colours{
+    .btn-#{$nombre}{
+        background-color: $color;
+    }
+}
+
+.btn-custom {
+    background-color: #4CAF50 !important; // Color de fondo
+    color: white !important; // Color del texto
+    &:hover {
+      background-color: #094e0c !important; // Color de fondo al pasar el ratón por encima
+    }
+  }
+.bgbody{
+  background-color: white
+}
+.bgnavbar{
+  background-color: #3586DB
+}
+.bgfooter {
+  background-color: #3586DB
+}

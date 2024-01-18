@@ -1,0 +1,57 @@
+.btn-Primary {
+  background-color: pink;
+}
+
+.btn-Secondary {
+  background-color: green;
+}
+
+.btn-Success {
+  background-color: rgb(68, 255, 68);
+}
+
+.btn-Danger {
+  background-color: red;
+}
+
+.btn-Warning {
+  background-color: Yellow;
+}
+
+.btn-Info {
+  background-color: rgb(147, 147, 252);
+}
+
+.btn-Ligth {
+  background-color: white;
+}
+
+.btn-Dark {
+  background-color: rgb(109, 25, 25);
+}
+
+.btn-Link {
+  background-color: red;
+}
+
+.btn-custom {
+  background-color: #4CAF50 !important;
+  color: white !important;
+}
+.btn-custom:hover {
+  background-color: #094e0c !important;
+}
+
+.bgbody {
+  background-color: white;
+}
+
+.bgnavbar {
+  background-color: #3586DB;
+}
+
+.bgfooter {
+  background-color: #3586DB;
+}
+
+/*# sourceMappingURL=Styles.css.map */
