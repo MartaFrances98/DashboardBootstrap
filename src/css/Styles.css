@@ -19,10 +19,10 @@
 }
 
 .btn-Info {
-  background-color: rgb(147, 147, 252);
+  background-color: #1e8ba6;
 }
 
-.btn-Ligth {
+.btn-Light {
   background-color: white;
 }
 
@@ -47,11 +47,24 @@
 }
 
 .bgnavbar {
-  background-color: #3586DB;
+  background-color: #35c8db;
 }
 
 .bgfooter {
-  background-color: #3586DB;
+  background-color: #1e8ba6;
+}
+
+.logo-pequeno {
+  width: 100px;
+  height: 100px;
+}
+
+.form-espaciado {
+  margin-top: 6rem;
+}
+
+.login-espaciado-arriba {
+  padding-top: 2rem;
 }
 
 /*# sourceMappingURL=Styles.css.map */

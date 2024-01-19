@@ -54,13 +54,17 @@ function Dashboard() {
       </header>
       <br></br>
       <br></br>
+      <h1 className="text-center">DASHBOARD</h1>
+      <br></br>
+      <br></br>
       <section className="bgbody">
-      <h2 className="text-center">Consultas pendientes</h2>
+      <h4 className="text-center">Consultas pendientes</h4>
       <br></br>
         <CitasComponent />
         <br></br>
         <br></br>
-        <h2 className="text-center">Navegacion Rapida</h2>
+        <h4 className="text-center">Navegacion Rapida</h4>
+        <br></br>
         <GroupExample />
       </section>
       <br></br>

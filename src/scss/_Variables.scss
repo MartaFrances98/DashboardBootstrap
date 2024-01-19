@@ -4,8 +4,8 @@ $Colours: (
     "Success": rgb(68, 255, 68), 
     "Danger": red,
     "Warning": Yellow, 
-    "Info":Blue, 
-    "Ligth":white, 
+    "Info":#1e8ba6 , 
+    "Light":white, 
     "Dark":rgb(109, 25, 25),
     "Link":red
 );
@@ -29,13 +29,21 @@ $Colours: (
   background-color: white
 }
 .bgnavbar{
-  background-color: #3586DB
+  background-color: #35c8db
 }
 .bgfooter {
-  background-color: #3586DB
+  background-color:  #1e8ba6 
+
 }
 
 .logo-pequeno {
   width: 100px;
   height: 100px;
+}
+
+.form-espaciado {
+  margin-top: 6rem; // Puedes ajustar este valor según tus necesidades
+}
+.login-espaciado-arriba{
+  padding-top: 2rem;
 }

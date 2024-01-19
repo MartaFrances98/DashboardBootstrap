@@ -26,7 +26,7 @@ function NavbarComponent() {
 
     const popover = (
         <Popover id="popover-logout">
-            <Popover.Header as="h3">¿Cerrar Sesión?</Popover.Header>
+            <Popover.Header as="h3">¿Iniciar Sesión?</Popover.Header>
             <Popover.Body>
                 Si cierras sesión, necesitarás iniciar sesión de nuevo para acceder.
             </Popover.Body>
@@ -57,11 +57,14 @@ function NavbarComponent() {
                                             <House /> Dashboard
                                         </Link>
                                         <Link to="/grafos" className="nav-link">
-                                            <BarChart /> Grafos
+                                            <BarChart /> Graphics
                                         </Link>
                                         <NavDropdown title="Dropdown">
                                             <NavDropdown.Item as={Link} to="/Administration">
                                                 Administration
+                                            </NavDropdown.Item>
+                                            <NavDropdown.Item as={Link} to="">
+                                                Other
                                             </NavDropdown.Item>
                                         </NavDropdown>
                                     </>

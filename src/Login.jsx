@@ -49,15 +49,17 @@ function Login() {
 
             <MDBContainer fluid className="p-3 my-5 h-custom">
                 <MDBRow>
-                    <MDBCol col='8' md='6'style={{ textAlign: 'center' }}>
-                        <img src={circular_logo} style={{ width: '500px', height: '500px' }} alt="logo" />
+                    <MDBCol col='4' md='6' style={{ textAlign: 'center' }}>
+                        <img src={circular_logo} class="img-fluid" alt="logo" />
                     </MDBCol>
 
+                    <MDBCol col='10' md='6'>
+                        <div className="d-flex flex-row align-items-center justify-content-center login-espaciado-arriba ">
+                            <p className="lead fw-normal mb-0 me-3" style={{ fontSize: '54px' }}>LOGIN</p>
+                        </div>
 
-                    <MDBCol col='6' md='6'>
-                        <div className="d-flex flex-row align-items-center justify-content-center">
-                            <p className="lead fw-normal mb-0 me-3">LOGIN</p>
-                        </div> <br />
+                        <div className="form-espaciado">
+
                         <MDBInput
                             wrapperClass='mb-4'
                             label='Email address'
@@ -81,6 +83,7 @@ function Login() {
                         </div>
                         <div className='text-center text-md-start mt-4 pt-2'>
                             <MDBBtn onClick={handleLogin} className="mb-0 px-5" size='lg'>Login</MDBBtn>
+                        </div>
                         </div>
                     </MDBCol>
                 </MDBRow>

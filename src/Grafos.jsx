@@ -19,6 +19,7 @@ function Grafos() {
       </header>
       <br></br>
       <br></br>
+      <h1 className="text-center">GRAPHICS</h1>
       <Container className="my-3">
         <Button as={Link} to="/Dashboard" variant="primary" className="d-inline-flex align-items-center">
           <House className="me-2" /> Go Dashboard
@@ -30,15 +31,17 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h2 className="text-center">Cantidad de citas por Especialidad</h2>
-              <div>
+              <h4 className="text-center">Cantidad de citas por Especialidad</h4>
+              <br></br>
+              <div style={{  marginLeft: '150px'}}>
                 <MyDoughnutChart />
               </div>
             </section>
           </Col>
           <Col>
             <section>
-              <h2 className="text-center">Cantidad de recetas por tipo de Medicamento</h2>
+              <h4 className="text-center">Cantidad de recetas por tipo de Medicamento</h4>
+              <br></br>
               <div>
                 <MyLineChart />
               </div>
@@ -50,7 +53,8 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h2 className="text-center">Cantidad de citas por mes del año</h2>
+              <h4 className="text-center">Cantidad de citas por mes del año</h4>
+              <br></br>
               <div>
                 <MyBarChart />
               </div>
@@ -58,7 +62,8 @@ function Grafos() {
           </Col>
           <Col>
             <section>
-              <h2 className="text-center">Numero de citas por Especialidad</h2>
+              <h4 className="text-center">Numero de citas por Especialidad</h4>
+              <br></br>
               <div>
                 <MyRadarChart />
               </div>
