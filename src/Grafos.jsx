@@ -3,7 +3,6 @@ import NavbarComponent from './Componentes/navbar.jsx';
 import FooterComponent from './Componentes/footer.jsx';
 import MyDoughnutChart from './Componentes/grafico2.jsx';
 import MyLineChart from './Componentes/grafico1.jsx';
-import MyLineChart2 from './Componentes/grafico5.jsx';
 import MyBarChart from './Componentes/grafico3.jsx';
 import MyRadarChart from './Componentes/grafico4.jsx';
 import { Col, Row, Container } from 'react-bootstrap';
@@ -31,7 +30,7 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h2 className="text-center">Título del Primer Acordeón</h2>
+              <h2 className="text-center">Cantidad de citas por Especialidad</h2>
               <div>
                 <MyDoughnutChart />
               </div>
@@ -39,7 +38,7 @@ function Grafos() {
           </Col>
           <Col>
             <section>
-              <h2 className="text-center">Título del Primer Acordeón</h2>
+              <h2 className="text-center">Cantidad de recetas por tipo de Medicamento</h2>
               <div>
                 <MyLineChart />
               </div>
@@ -51,7 +50,7 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h2 className="text-center">Título del Primer Acordeón</h2>
+              <h2 className="text-center">Cantidad de citas por mes del año</h2>
               <div>
                 <MyBarChart />
               </div>
@@ -59,44 +58,15 @@ function Grafos() {
           </Col>
           <Col>
             <section>
-              <h2 className="text-center">Título del Primer Acordeón</h2>
-              <div>
-                <MyLineChart2 anio={2024} />
-              </div>
-            </section>
-          </Col>
-        </Row>
-
-
-        <br></br>
-        <br></br>
-        <Row>
-          <Col>
-            <section>
-              <h2 className="text-center">Título del Primer Acordeón</h2>
+              <h2 className="text-center">Numero de citas por Especialidad</h2>
               <div>
                 <MyRadarChart />
               </div>
             </section>
           </Col>
-          <Col>
-            <section>
-              <div>
-              </div>
-            </section>
-          </Col>
         </Row>
-
-
-
-        {/* <br></br>
         <br></br>
-        <section>
-          <h2 className="text-center">Título del Primer Acordeón</h2>
-          <div>
-            <MyRadarChart />
-          </div>
-        </section> */}
+        <br></br>
       </Container>
       <div>
         <br></br>

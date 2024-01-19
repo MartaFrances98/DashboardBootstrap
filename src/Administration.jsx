@@ -24,7 +24,8 @@ function Administration() {
       </Container>
       <Container>
         <section>
-          <h2 className="text-center">Título del Primer Acordeón</h2>
+          <h2 className="text-center">Administrar personal medico</h2>
+          <br></br>
           <div>
             <AllCollapseExample />
           </div>
@@ -35,7 +36,8 @@ function Administration() {
 
 
         <section>
-          <h2 className="text-center">Título del Segundo Acordeón</h2>
+          <h2 className="text-center">Administrar pacientes</h2>
+          <br></br>
           <div>
             <AllCollapsePaciente />
           </div>

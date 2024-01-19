@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useNavigate, } from 'react-router-dom';
 import { MDBContainer, MDBCol, MDBRow, MDBBtn, MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
 import NavbarComponent from './Componentes/navbar.jsx';
 import FooterComponent from './Componentes/footer.jsx';
+import circular_logo from './img/circular_logo.png';
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -48,12 +49,14 @@ function Login() {
 
             <MDBContainer fluid className="p-3 my-5 h-custom">
                 <MDBRow>
-                    <MDBCol col='10' md='6'>
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" className="img-fluid" alt="Sample image" />
+                    <MDBCol col='8' md='6'style={{ textAlign: 'center' }}>
+                        <img src={circular_logo} style={{ width: '500px', height: '500px' }} alt="logo" />
                     </MDBCol>
-                    <MDBCol col='4' md='6'>
+
+
+                    <MDBCol col='6' md='6'>
                         <div className="d-flex flex-row align-items-center justify-content-center">
-                            <p className="lead fw-normal mb-0 me-3">Sign in</p>
+                            <p className="lead fw-normal mb-0 me-3">LOGIN</p>
                         </div> <br />
                         <MDBInput
                             wrapperClass='mb-4'

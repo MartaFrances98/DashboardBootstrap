@@ -55,11 +55,12 @@ function Dashboard() {
       <br></br>
       <br></br>
       <section className="bgbody">
-      <h2 className="text-center">Título del Primer Acordeón</h2>
+      <h2 className="text-center">Consultas pendientes</h2>
+      <br></br>
         <CitasComponent />
         <br></br>
         <br></br>
-        <h2 className="text-center">Título del Primer Acordeón</h2>
+        <h2 className="text-center">Navegacion Rapida</h2>
         <GroupExample />
       </section>
       <br></br>

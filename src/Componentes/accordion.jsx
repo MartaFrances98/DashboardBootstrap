@@ -167,9 +167,9 @@ function AllCollapseExample() {
                   <Form.Label>Email address</Form.Label>
                   <Form.Control value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Enter email" />
                 </Form.Group>
-                <Form.Group as={Row} className="mb-3">
-                  <Form.Label column sm="2">Password</Form.Label>
-                  <Col sm="10">
+                <Form.Group  className="mb-3">
+                  <Form.Label>Password</Form.Label>
+                  <Col>
                     <Form.Control value={password} onChange={e => setPassword(e.target.value)} type="password" placeholder="Password" />
                   </Col>
                 </Form.Group>
@@ -177,8 +177,9 @@ function AllCollapseExample() {
                   <Form.Label>Consulta</Form.Label>
                   <Form.Control value={consulta} onChange={e => setConsulta(e.target.value)} type="text" placeholder="Número de consulta" />
                 </Form.Group>
+                <Form.Label>Especialidad</Form.Label>
                 <Form.Select value={especialidad} onChange={e => setEspecialidad(e.target.value)} aria-label="Especialidad">
-                  <option value="">Especialidad</option>
+                  <option value="">Elige especialidad:</option>
                   <option value="Pediatria">Pediatria</option>
                   <option value="Medicina Interna">Medicina Interna</option>
                   <option value="Medicina Familiar">Medicina Familiar</option>
@@ -189,12 +190,16 @@ function AllCollapseExample() {
                   <option value="Alergologia">Alergologia</option>
                   <option value="Oftamolmologia">Oftamolmologia</option>
                 </Form.Select>
+                <br></br>
+                <Form.Label>Disponibilidad</Form.Label>
                 <Form.Select value={disponibilidad} onChange={e => setDisponibilidad(e.target.value)} aria-label="Disponibilidad">
                   <option value="">Elige disponibilidad:</option>
                   <option value="Maniana">Mañana</option>
                   <option value="Tarde">Tarde</option>
                   <option value="Maniana y Tarde">Mañana y Tarde</option>
                 </Form.Select>
+                <br></br>
+                <Form.Label>Tipo de medico:</Form.Label>
                 <div className="mb-3">
                   <Form.Check label="Admin" type="radio" name="admin" id="admin-yes" value="Si" checked={isAdmin === "Si"} onChange={() => setIsAdmin("Si")} />
                   <Form.Check label="No Admin" type="radio" name="admin" id="admin-no" value="No" checked={isAdmin === "No"} onChange={() => setIsAdmin("No")} />
@@ -212,6 +217,7 @@ function AllCollapseExample() {
                   <option key={medico.id} value={medico.id}>{medico.nombreCompleto}</option>
                 ))}
               </Form.Select>
+              <br></br>
 
               {medicoSeleccionado && (
                 <Form onSubmit={handleSubmitmodificar}>
@@ -231,7 +237,7 @@ function AllCollapseExample() {
                       />
                     </Col>
                   </Row>
-
+                  <br></br>
                   <Form.Group className="mb-3">
                     <Form.Label>Id Número de colegiado</Form.Label>
                     <Form.Control
@@ -262,13 +268,14 @@ function AllCollapseExample() {
                       placeholder="Número de consulta"
                     />
                   </Form.Group>
-
+                  <br></br>
+                  <Form.Label>Especialidad</Form.Label>
                   <Form.Select
                     value={MedicoId.especialidad}
                     onChange={(e) => setDatosMedico({ ...MedicoId, especialidad: e.target.value })}
                     aria-label="Especialidad"
                   >
-                    <option value="">Seleccione Especialidad</option>
+                    <option value="">Seleccione Especialidad:</option>
                     <option value="Pediatria">Pediatría</option>
                     <option value="Medicina Interna">Medicina Interna</option>
                     <option value="Medicina Familiar">Medicina Familiar</option>
@@ -280,18 +287,21 @@ function AllCollapseExample() {
                     <option value="Oftamolmologia">Oftalmología</option>
 
                   </Form.Select>
-
+                  <br></br>
+                  <Form.Label>Disponibilidad</Form.Label>
                   <Form.Select
                     value={MedicoId.disponibilidad}
                     onChange={(e) => setDatosMedico({ ...MedicoId, disponibilidad: e.target.value })}
                     aria-label="Disponibilidad"
                   >
-                    <option value="">Seleccione Disponibilidad</option>
+                    <option value="">Seleccione Disponibilidad:</option>
                     <option value="Maniana">Mañana</option>
                     <option value="Tarde">Tarde</option>
                     <option value="Maniana y Tarde">Mañana y Tarde</option>
                   </Form.Select>
 
+                  <br></br>
+                  <Form.Label>Tipo de medico:</Form.Label>
                   <div className="mb-3">
                     <Form.Check
                       label="Admin"
