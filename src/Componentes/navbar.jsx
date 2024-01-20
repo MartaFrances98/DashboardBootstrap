@@ -26,9 +26,9 @@ function NavbarComponent() {
 
     const popover = (
         <Popover id="popover-logout">
-            <Popover.Header as="h3">¿Iniciar Sesión?</Popover.Header>
+            <Popover.Header as="h3">Login?</Popover.Header>
             <Popover.Body>
-                Si cierras sesión, necesitarás iniciar sesión de nuevo para acceder.
+            If you log out, you will need to log in again to access.
             </Popover.Body>
         </Popover>
     );
@@ -46,7 +46,7 @@ function NavbarComponent() {
                     <Navbar.Offcanvas className="bgnavbar" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" placement="end">
                         <Offcanvas.Header closeButton className="bgnavbar">
                             <Offcanvas.Title className="bgnavbar" id="offcanvasNavbarLabel">
-                                Bienvenido
+                                Welcome
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body className="bgnavbar">
@@ -70,7 +70,7 @@ function NavbarComponent() {
                                     </>
                                 ) : (
                                     <OverlayTrigger trigger="click" placement="left" overlay={popover}>
-                                        <Button variant="danger">Entrar</Button>
+                                        <Button variant="danger">Login</Button>
                                     </OverlayTrigger>)}
                             </Nav>
                         </Offcanvas.Body>

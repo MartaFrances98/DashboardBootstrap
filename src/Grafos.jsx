@@ -74,7 +74,7 @@ function Grafos() {
               <div className="chart-container">
                 <h4 className="text-center">Number of appointments by speciality</h4>
                 <br></br>
-                <div className='d-flex justify-content-center align-items-center'>
+                <div className=' align-items-center'>
                   <MyRadarChart />
                 </div>
               </div>
