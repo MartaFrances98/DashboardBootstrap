@@ -11,24 +11,18 @@ function GroupExample() {
     return (
         <Container>
             <CardGroup>
-                <Card>
+                <Card className="custom-card">
                     <Card.Body className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '10rem' }}>
-                        <Card.Title>Administración</Card.Title>
-                        <Button variant="primary" onClick={() => navigate('/Administration')}>Ir a Administración</Button>
+                        <Card.Title>Administration</Card.Title>
+                        <Button variant="primary" onClick={() => navigate('/Administration')}>Go Administration</Button>
                     </Card.Body>
                 </Card>
-                <Card>
+                <Card className="custom-card">
                     <Card.Body className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '10rem' }}>
-                        <Card.Title>Gráficos</Card.Title>
-                        <Button variant="primary" onClick={() => navigate('/grafos')}>Ir a Gráficos</Button>
+                        <Card.Title>Graphics</Card.Title>
+                        <Button variant="primary" onClick={() => navigate('/grafos')}>Go Graphics</Button>
                     </Card.Body>
                 </Card>
-                {/* <Card>
-                    <Card.Body className="d-flex flex-column justify-content-center align-items-center" style={{ minHeight: '10rem' }}>
-                        <Card.Title>Login</Card.Title>
-                        <Button variant="primary" onClick={() => navigate('/')}>Ir a Login</Button>
-                    </Card.Body>
-                </Card> */}
             </CardGroup>
         </Container>
     );

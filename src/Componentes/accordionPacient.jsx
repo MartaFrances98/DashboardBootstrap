@@ -143,16 +143,16 @@ function AllCollapsePacientes() {
             <Container>
                 <Accordion>
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header>Insertar Paciente</Accordion.Header>
+                        <Accordion.Header>Insert Patient</Accordion.Header>
                         <Accordion.Body>
                             <Form onSubmit={handleSubmit}>
                                 <Row>
                                     <Col>
-                                        <Form.Label>Nombre</Form.Label>
+                                        <Form.Label>First Name</Form.Label>
                                         <Form.Control value={nombre} onChange={e => setNombre(e.target.value)} />
                                     </Col>
                                     <Col>
-                                        <Form.Label>Apellido</Form.Label>
+                                        <Form.Label>Last Name</Form.Label>
                                         <Form.Control value={apellido} onChange={e => setApellido(e.target.value)} />
                                     </Col>
                                 </Row>
@@ -161,17 +161,17 @@ function AllCollapsePacientes() {
                                     <Form.Control value={dni} onChange={e => setDni(e.target.value)} />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Dirección</Form.Label>
+                                    <Form.Label>Address</Form.Label>
                                     <Form.Control value={direccion} onChange={e => setDireccion(e.target.value)} />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Móvil</Form.Label>
+                                    <Form.Label>Mobile</Form.Label>
                                     <Form.Control value={movil} onChange={e => setMovil(e.target.value)} />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Seguro Médico</Form.Label>
+                                    <Form.Label>Health Insurance</Form.Label>
                                     <Form.Select value={idSeguroMedico} onChange={e => setIdSeguroMedico(e.target.value)}>
-                                        <option value="">Selecciona un seguro médico</option>
+                                        <option value="">Select a health insurance</option>
                                         {segurosMedicos.map(seguro => (
                                             <option key={seguro.IdSeguroMedico} value={seguro.IdSeguroMedico}>
                                                 {seguro.NombreSeguro}
@@ -184,19 +184,19 @@ function AllCollapsePacientes() {
                                     <Form.Control value={email} onChange={e => setEmail(e.target.value)} type="email" />
                                 </Form.Group>
                                 <Form.Group className="mb-3">
-                                    <Form.Label>Contraseña</Form.Label>
+                                    <Form.Label>Password</Form.Label>
                                     <Form.Control value={password} onChange={e => setPassword(e.target.value)} type="password" />
                                 </Form.Group>
-                                <Button type="submit">Enviar</Button>
+                                <Button type="submit">Send</Button>
                             </Form>
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header>Modificar Paciente</Accordion.Header>
+                        <Accordion.Header>Modify Patient</Accordion.Header>
                         <Accordion.Body>
                             <Form.Select aria-label="Elegir Paciente" onChange={handlePacienteChange}>
-                                <option value="">Elegir Paciente</option>
+                                <option value="">Choose Patient</option>
                                 {pacientes.map(paciente => (
                                     <option key={paciente.dni} value={paciente.dni}>
                                         {paciente.nombreCompleto}
@@ -207,14 +207,14 @@ function AllCollapsePacientes() {
                                 <Form onSubmit={handleSubmitModificar}>
                                     <Row>
                                         <Col>
-                                            <Form.Label>Nombre</Form.Label>
+                                            <Form.Label>First Name</Form.Label>
                                             <Form.Control
                                                 value={nombre}
                                                 onChange={e => setNombre(e.target.value)}
                                             />
                                         </Col>
                                         <Col>
-                                            <Form.Label>Apellido</Form.Label>
+                                            <Form.Label>Last name</Form.Label>
                                             <Form.Control
                                                 value={apellido}
                                                 onChange={e => setApellido(e.target.value)}
@@ -222,23 +222,23 @@ function AllCollapsePacientes() {
                                         </Col>
                                     </Row>
                                     <Form.Group className="mb-3">
-                                        <Form.Label>Dirección</Form.Label>
+                                        <Form.Label>Address</Form.Label>
                                         <Form.Control
                                             value={direccion}
                                             onChange={e => setDireccion(e.target.value)}
                                         />
                                     </Form.Group>
                                     <Form.Group className="mb-3">
-                                        <Form.Label>Móvil</Form.Label>
+                                        <Form.Label>Mobile</Form.Label>
                                         <Form.Control
                                             value={movil}
                                             onChange={e => setMovil(e.target.value)}
                                         />
                                     </Form.Group>
                                     <Form.Group className="mb-3">
-                                        <Form.Label>Seguro Médico</Form.Label>
+                                        <Form.Label>Health Insurance</Form.Label>
                                         <Form.Select value={idSeguroMedico} onChange={e => setIdSeguroMedico(e.target.value)}>
-                                            <option value="">Selecciona un seguro médico</option>
+                                            <option value="">Select a health insurance</option>
                                             {segurosMedicos.map(seguro => (
                                                 <option key={seguro.IdSeguroMedico} value={seguro.IdSeguroMedico}>
                                                     {seguro.NombreSeguro}
@@ -254,14 +254,14 @@ function AllCollapsePacientes() {
                                             type="email"
                                         />
                                     </Form.Group>
-                                    <Button type="submit">Guardar Cambios</Button>
+                                    <Button type="submit">Save Changes</Button>
                                 </Form>
                             )}
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header>Borrar Paciente</Accordion.Header>
+                        <Accordion.Header>Delete Patient</Accordion.Header>
                         <Accordion.Body>
                             <Form>
                                 <Form.Select
@@ -269,14 +269,14 @@ function AllCollapsePacientes() {
                                     value={pacienteParaBorrar}
                                     onChange={handlePacienteParaBorrarChange}
                                 >
-                                    <option value="">Elegir Paciente</option>
+                                    <option value="">Choose Patient</option>
                                     {pacientes.map(paciente => (
                                         <option key={paciente.dni} value={paciente.dni}>{paciente.nombreCompleto}</option>
                                     ))}
                                 </Form.Select>
                                 <br />
                                 <Button className="btn-custom" onClick={() => setShowModal(true)} disabled={!pacienteParaBorrar}>
-                                    Borrar
+                                Delete
                                 </Button>
                                 <Modal
                                     show={showModal}
@@ -286,18 +286,18 @@ function AllCollapsePacientes() {
                                 >
                                     <Modal.Header closeButton>
                                         <Modal.Title id="confirm-delete-title">
-                                            ¿Estás seguro de que quieres eliminar a este paciente?
+                                        Are you sure you want to eliminate this patient?                                        
                                         </Modal.Title>
                                     </Modal.Header>
                                     <Modal.Body>
-                                        Esta acción no se puede deshacer. El paciente con DNI {pacienteParaBorrar} será eliminado permanentemente.
+                                    This action cannot be undone. The patient with DNI {pacienteParaBorrar} will be permanently deleted.
                                     </Modal.Body>
                                     <Modal.Footer>
                                         <Button variant="secondary" onClick={() => setShowModal(false)}>
                                             No
                                         </Button>
                                         <Button variant="danger" onClick={confirmarBorrado}>
-                                            Sí, eliminar
+                                        Yes, delete
                                         </Button>
                                     </Modal.Footer>
                                 </Modal>

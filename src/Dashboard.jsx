@@ -23,11 +23,11 @@ const CitasComponent = () => {
       <Table striped bordered responsive="sm" hover>
         <thead>
           <tr>
-            <th>Dia</th>
-            <th>Hora</th>
-            <th>Numero Consulta</th>
-            <th>Nombre Paciente</th>
-            <th>Apellido Paciente</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Consultation Number</th>
+            <th>Patient First Name</th>
+            <th>Patient Last Name</th>
           </tr>
         </thead>
         <tbody>
@@ -58,12 +58,12 @@ function Dashboard() {
       <br></br>
       <br></br>
       <section className="bgbody">
-      <h4 className="text-center">Consultas pendientes</h4>
-      <br></br>
+        <h4 className="text-center">Pending Enquiries</h4>
+        <br></br>
         <CitasComponent />
         <br></br>
         <br></br>
-        <h4 className="text-center">Navegacion Rapida</h4>
+        <h4 className="text-center">Quick Navigation</h4>
         <br></br>
         <GroupExample />
       </section>

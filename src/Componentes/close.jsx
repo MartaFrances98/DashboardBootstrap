@@ -12,9 +12,9 @@ function LogoutButton() {
     };
 
     return (
-        <Button onClick={handleLogout} aria-label="Cerrar Sesión">
-            <XCircle className="me-2" />
-            Cerrar sesión
+        <Button onClick={handleLogout} className="btn-Dark" aria-label="Cerrar Sesión">
+            <XCircle className="me-2 " />
+            Log out
         </Button>
     );
 };

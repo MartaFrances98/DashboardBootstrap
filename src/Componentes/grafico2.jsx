@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Doughnut } from 'react-chartjs-2';
+
 import Chart from 'chart.js/auto';
 
 function MyDoughnutChart() {
@@ -60,9 +61,7 @@ function MyDoughnutChart() {
   }, []);
 
   return (
-    <div style={{ width: '300px', height: '300px' }}>
-      <Doughnut data={chartData} />
-    </div>
+    <Doughnut data={chartData} />
   );
 }
 

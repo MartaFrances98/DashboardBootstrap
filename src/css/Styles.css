@@ -1,45 +1,56 @@
 .btn-Primary {
-  background-color: pink;
+  background-color: pink !important;
+  border: none !important;
 }
 
 .btn-Secondary {
-  background-color: green;
+  background-color: green !important;
+  border: none !important;
 }
 
 .btn-Success {
-  background-color: rgb(68, 255, 68);
+  background-color: rgb(68, 255, 68) !important;
+  border: none !important;
 }
 
 .btn-Danger {
-  background-color: red;
+  background-color: red !important;
+  border: none !important;
 }
 
 .btn-Warning {
-  background-color: Yellow;
+  background-color: Yellow !important;
+  border: none !important;
 }
 
 .btn-Info {
-  background-color: #1e8ba6;
+  background-color: #1e8ba6 !important;
+  border: none !important;
 }
 
 .btn-Light {
-  background-color: white;
+  background-color: white !important;
+  border: none !important;
 }
 
 .btn-Dark {
-  background-color: rgb(109, 25, 25);
+  background-color: rgb(109, 25, 25) !important;
+  border: none !important;
 }
 
 .btn-Link {
-  background-color: red;
+  background-color: red !important;
+  border: none !important;
 }
 
 .btn-custom {
   background-color: #4CAF50 !important;
   color: white !important;
+  border: none !important;
 }
 .btn-custom:hover {
   background-color: #094e0c !important;
+  border: none !important;
 }
 
 .bgbody {
@@ -65,6 +76,24 @@
 
 .login-espaciado-arriba {
   padding-top: 2rem;
+}
+
+.custom-card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.chart-container:hover {
+  transform: translateY(-10px);
 }
 
 /*# sourceMappingURL=Styles.css.map */

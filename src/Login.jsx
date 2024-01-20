@@ -82,7 +82,7 @@ function Login() {
                             <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Remember me' />
                         </div>
                         <div className='text-center text-md-start mt-4 pt-2'>
-                            <MDBBtn onClick={handleLogin} className="mb-0 px-5" size='lg'>Login</MDBBtn>
+                            <MDBBtn  onClick={handleLogin} className=" mb-0 px-5 btn-Info">Login</MDBBtn>
                         </div>
                         </div>
                     </MDBCol>

@@ -8,23 +8,28 @@ $Colours: (
     "Light":white, 
     "Dark":rgb(109, 25, 25),
     "Link":red
+
 );
 
 
 
 @each $nombre, $color in $Colours{
     .btn-#{$nombre}{
-        background-color: $color;
+        background-color: $color !important;
+        border: none !important; 
     }
 }
 
 .btn-custom {
     background-color: #4CAF50 !important; // Color de fondo
     color: white !important; // Color del texto
+    border: none !important; 
     &:hover {
       background-color: #094e0c !important; // Color de fondo al pasar el ratón por encima
+      border: none !important; 
     }
   }
+
 .bgbody{
   background-color: white
 }
@@ -47,3 +52,24 @@ $Colours: (
 .login-espaciado-arriba{
   padding-top: 2rem;
 }
+
+.custom-card {
+  background-color: #f8f9fa; // Color de fondo
+  border: 1px solid #ddd; // Borde
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); // Sombra
+}
+
+.chart-container {
+  border: 2px solid black; // Tamaño del borde
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); // Sombra
+  transition: transform 0.3s ease; // Transición para el efecto de elevación
+  margin: auto; // Centra el gráfico en el contenedor
+  padding: 20px; // Espacio dentro del contenedor
+  border-radius: 10px; // Redondea las esquinas
+
+  &:hover {
+      transform: translateY(-10px); // Elevación al pasar el mouse
+  }
+}
+
+

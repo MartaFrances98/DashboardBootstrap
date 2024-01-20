@@ -21,7 +21,7 @@ function Grafos() {
       <br></br>
       <h1 className="text-center">GRAPHICS</h1>
       <Container className="my-3">
-        <Button as={Link} to="/Dashboard" variant="primary" className="d-inline-flex align-items-center">
+        <Button as={Link} to="/Dashboard" variant="primary" className="d-inline-flex align-items-center btn-Info">
           <House className="me-2" /> Go Dashboard
         </Button>
       </Container>
@@ -31,19 +31,24 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h4 className="text-center">Cantidad de citas por Especialidad</h4>
-              <br></br>
-              <div style={{  marginLeft: '150px'}}>
-                <MyDoughnutChart />
+              <div className="chart-container ">
+                <h4 className="text-center">Number of appointments per month of the year</h4>
+                <br></br>
+                <div>
+                <MyBarChart />
+                </div>
               </div>
             </section>
           </Col>
+          <br></br>
           <Col>
             <section>
-              <h4 className="text-center">Cantidad de recetas por tipo de Medicamento</h4>
-              <br></br>
-              <div>
-                <MyLineChart />
+              <div className="chart-container">
+                <h4 className="text-center">Number of prescriptions by type of medicine</h4>
+                <br></br>
+                <div>
+                  <MyLineChart />
+                </div>
               </div>
             </section>
           </Col>
@@ -53,19 +58,25 @@ function Grafos() {
         <Row>
           <Col>
             <section>
-              <h4 className="text-center">Cantidad de citas por mes del año</h4>
-              <br></br>
-              <div>
-                <MyBarChart />
+              <div className="chart-container">
+                <h4 className="text-center">Number of appointments by speciality</h4>
+                <br></br>
+                <div>
+                <MyDoughnutChart />
+                 
+                </div>
               </div>
             </section>
           </Col>
+          <br></br>
           <Col>
             <section>
-              <h4 className="text-center">Numero de citas por Especialidad</h4>
-              <br></br>
-              <div>
-                <MyRadarChart />
+              <div className="chart-container">
+                <h4 className="text-center">Number of appointments by speciality</h4>
+                <br></br>
+                <div>
+                  <MyRadarChart />
+                </div>
               </div>
             </section>
           </Col>

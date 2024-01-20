@@ -19,13 +19,13 @@ function Administration() {
       <br></br>
       <h1 className="text-center">ADMINISTRATION</h1>
       <Container className="my-3">
-        <Button as={Link} to="/Dashboard" variant="primary" className="d-inline-flex align-items-center">
+        <Button as={Link} to="/Dashboard" variant="primary" className="d-inline-flex align-items-center btn-Info">
           <House className="me-2" /> Go Dashboard
         </Button>
       </Container>
       <Container>
         <section>
-          <h4 className="text-center">Administrar personal medico</h4>
+          <h4 className="text-center">Manage medical staff</h4>
           <br></br>
           <div>
             <AllCollapseExample />
@@ -34,7 +34,7 @@ function Administration() {
         <br></br>
         <br></br>
         <section>
-          <h4 className="text-center">Administrar pacientes</h4>
+          <h4 className="text-center">Managing patients</h4>
           <br></br>
           <div>
             <AllCollapsePaciente />
