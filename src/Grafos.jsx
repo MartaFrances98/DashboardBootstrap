@@ -29,24 +29,24 @@ function Grafos() {
       <br></br>
       <Container>
         <Row>
-          <Col>
+          <Col className='mt-5 mt-xl-0'>
             <section>
               <div className="chart-container ">
                 <h4 className="text-center">Number of appointments per month of the year</h4>
                 <br></br>
-                <div>
-                <MyBarChart />
+                <div className='d-flex justify-content-center align-items-center'>
+                  <MyBarChart />
                 </div>
               </div>
             </section>
           </Col>
           <br></br>
-          <Col>
+          <Col className='mt-5 mt-xl-0'>
             <section>
               <div className="chart-container">
                 <h4 className="text-center">Number of prescriptions by type of medicine</h4>
                 <br></br>
-                <div>
+                <div className='d-flex justify-content-center align-items-center'>
                   <MyLineChart />
                 </div>
               </div>
@@ -56,25 +56,25 @@ function Grafos() {
         <br></br>
         <br></br>
         <Row>
-          <Col>
+          <Col className='mt-5 mt-xl-0'>
             <section>
               <div className="chart-container">
                 <h4 className="text-center">Number of appointments by speciality</h4>
                 <br></br>
-                <div>
-                <MyDoughnutChart />
-                 
+                <div className='d-flex justify-content-center align-items-center'>
+                  <MyDoughnutChart />
+
                 </div>
               </div>
             </section>
           </Col>
           <br></br>
-          <Col>
+          <Col className='mt-5 mt-xl-0'>
             <section>
               <div className="chart-container">
                 <h4 className="text-center">Number of appointments by speciality</h4>
                 <br></br>
-                <div>
+                <div className='d-flex justify-content-center align-items-center'>
                   <MyRadarChart />
                 </div>
               </div>
