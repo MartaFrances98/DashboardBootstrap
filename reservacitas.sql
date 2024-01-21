@@ -232,7 +232,7 @@ INSERT INTO `reservacitas`.`pacientes` (`NombrePaciente`, `ApellidoPaciente`, `D
 INSERT INTO `reservacitas`.`pacientes` (`NombrePaciente`, `ApellidoPaciente`, `DNIPaciente`, `DireccionPaciente`, `MovilPaciente`, `IdSeguroMedico`, `CorreoPaciente`, `PasswordPaciente`) VALUES ('Marta2', 'Frances', '12345678C', 'Santa Clara', '111222333', '4', 'Marta2@Marta.com', '$2b$10$dJ7.renmaUjUT7GNrrUM8OYZfaDNdO9o7zlLfjU/HfG6HrOsGrS0S');
 
 -- Citas--
-INSERT INTO `reservacitas`.`citas` (`IdCita`, `DNIPaciente`, `IdNumeroColegiado`, `Fecha`, `Diagnostico`, `PrecioCita`, `Hora`, `EstadoCita`) VALUES ('1', '12345678A', '12345678', '2024-1-20', 'MALITO DEL CULO', '50', '17:00', 'En curso');
+INSERT INTO `reservacitas`.`citas` (`IdCita`, `DNIPaciente`, `IdNumeroColegiado`, `Fecha`, `Diagnostico`, `PrecioCita`, `Hora`, `EstadoCita`) VALUES ('1', '12345678A', '12345678', '2024-1-29', 'MALITO DEL CULO', '50', '17:00', 'En curso');
 INSERT INTO `reservacitas`.`citas` (`IdCita`, `DNIPaciente`, `IdNumeroColegiado`, `Fecha`, `Diagnostico`, `PrecioCita`, `Hora`, `EstadoCita`) VALUES ('2', '12345678A', '12345678', '2024-2-19', 'MALITO DEL CULO', '50', '17:00', 'En curso');
 INSERT INTO `reservacitas`.`citas` (`IdCita`, `DNIPaciente`, `IdNumeroColegiado`, `Fecha`, `Diagnostico`, `PrecioCita`, `Hora`, `EstadoCita`) VALUES ('3', '12345678B', '12345678', '2024-2-20', 'MALITO DEL CULO', '50', '17:00', 'En curso');
 INSERT INTO `reservacitas`.`citas` (`IdCita`, `DNIPaciente`, `IdNumeroColegiado`, `Fecha`, `Diagnostico`, `PrecioCita`, `Hora`, `EstadoCita`) VALUES ('4', '12345678B', '12345678', '2024-2-21', 'MALITO DEL CULO', '50', '17:00', 'En curso');
@@ -262,11 +262,24 @@ INSERT INTO `reservacitas`.`pagosfacturacion` (`IdCita`, `Fechapago`, `Metodopag
 INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('4 veces', 'al dia', '1');
 INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('5 veces', 'al dia', '2');
 INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('8 veces', 'al dia', '3');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('4 veces', 'al dia', '1');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('5 veces', 'al dia', '2');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('8 veces', 'al dia', '3');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('4 veces', 'al dia', '1');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('5 veces', 'al dia', '2');
+INSERT INTO `reservacitas`.`recetasmedicas` (`Dosis`, `InstruccionUso`, `IdCita`) VALUES ('8 veces', 'al dia', '3');
 
 -- has--
 INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('9', '1');
 INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('10', '2');
 INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('11', '3');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('1', '4');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('2', '5');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('5', '6');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('6', '7');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('7', '8');
+INSERT INTO `reservacitas`.`medicamento_has_recetasmedicas` (`Medicamento_idMedicamento`, `RecetasMedicas_idReceta`) VALUES ('3', '9');
+
 
 
 -- Seguros--
